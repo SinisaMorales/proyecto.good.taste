@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Good taste</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="imagenes/logo.hermoso.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./clases.css/styles.css">
+</head>
+
+<body>
+    <header class="nav__princ">
+        <nav class="navbar navbar-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end offcanvas__title" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header offcanvas__header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menú</h5>
+                        <button type="button" class="btn-close btn-close-dark " data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body offcanvas__nav">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active offcanvas__categories" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle offcanvas__categories" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Guitarras
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark offcanvas__categories--dropdown">
+                                    <li><a class="dropdown-item" href="./sites/guitarras.html">Acústicas</a></li>
+                                    <li><a class="dropdown-item" href="#">Criollas/Española</a></li>
+                                    <li><a class="dropdown-item" href="#">Eléctricas</a></li>
+                                    <li><a class="dropdown-item" href="#">12 cuerdas</a></li>
+                                    <li><a class="dropdown-item" href="#">Ukeleles</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="nav-link dropdown-toggle offcanvas__categories" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Bajos
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark offcanvas__categories--dropdown">
+                                    <li><a class="dropdown-item" href="#">Eléctricos</a></li>
+                                    <li><a class="dropdown-item" href="#">Acústicos</a></li>
+                                    <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                                    <li><a class="dropdown-item" href="#">Pedales para bajo</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="nav-link dropdown-toggle offcanvas__categories" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Baterías
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark offcanvas__categories--dropdown">
+                                    <li><a class="dropdown-item" href="#">Baterías completas</a></li>
+                                    <li><a class="dropdown-item" href="#">Por separado</a></li>
+                                    <li><a class="dropdown-item" href="#">Electrónicas</a></li>
+                                    <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="nav-link dropdown-toggle offcanvas__categories" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Vientos
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark offcanvas__categories--dropdown">
+                                    <li><a class="dropdown-item" href="#">Madera</a></li>
+                                    <li><a class="dropdown-item" href="#">Metal</a></li>
+                                    <li><a class="dropdown-item" href="#">Viento-madera</a></li>
+                                    <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="nav-link dropdown-toggle offcanvas__categories" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Cuerdas</a>
+                                <ul class="dropdown-menu dropdown-menu-dark offcanvas__categories--dropdown">
+                                    <li><a class="dropdown-item" href="#">Laudes</a></li>
+                                    <li><a class="dropdown-item" href="#">Violines</a></li>
+                                    <li><a class="dropdown-item" href="#">Violas</a></li>
+                                    <li><a class="dropdown-item" href="#">Violonchelo</a></li>
+                                    <li><a class="dropdown-item" href="#">Contrabajos</a></li>
+                                    <li><a class="dropdown-item" href="#">Arpas</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="nav-link dropdown-toggle  offcanvas__categories" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Sonido</a>
+                                <ul class="dropdown-menu dropdown-menu-dark offcanvas__categories--dropdown">
+                                    <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                                    <li><a class="dropdown-item" href="#">Auriculares</a></li>
+                                    <li><a class="dropdown-item" href="#">Home estudio</a></li>
+                                    <li><a class="dropdown-item" href="#">Micrófonos</a></li>
+                                    <li><a class="dropdown-item" href="#">Sonido en vivo</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link offcanvas__categories" href="#">Ofertas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link offcanvas__categories" href="#">Nostros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link offcanvas__categories " href="#">Preguntas frecuentes</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <button class="btn btn-success offcanvas__nav--searchbutton" type="submit">Buscar</button>
+                            <input class="form-control ms-2 offcanvas__nav--search" type="search" placeholder=""
+                                aria-label="Search">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <img src="./imagenes/logo.hermoso.png" alt="Logo de good taste" class="imagen__logo">
+    </header>
+    <div id="carouselExampleCaptions" class="carousel slide carousel__index" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner active carouselprincipal__index">
+            <div class="carousel-item active carousel__img" data-bs-interval="10000">
+                <img src="./imagenes/rombo-mM_TX-Eczic-unsplash.jpg" class="carousel__img"
+                    alt="amplificador y guitarra">
+                <div class="carousel-caption d-md-block">
+                    <h5>Instrumentos musicales y audio profesional</h5>
+                </div>
+            </div>
+            <div class="carousel-item carousel__img" data-bs-interval="2000">
+                <img src="./imagenes/senad-palic-3bgcqIiFdRk-unsplash.jpg" class="carousel__img"
+                    alt="guitarras en venta">
+                <div class="carousel-caption d-md-block">
+                    <h5>Nuevos ingresos en guitarras</h5>
+                </div>
+            </div>
+            <div class="carousel-item carousel__img" data-bs-interval="2000">
+                <img src="./imagenes/pedales.jpg" class="carousel__img " alt="pedales de efecto">
+                <div class="carousel-caption d-md-block">
+                    <h5>Pedaleras y complementos</h5>
+                </div>
+            </div>
+            <div class="carousel-item carousel__img">
+                <img src="./imagenes/marshall.headphones.piano.jpg" class="carousel__img" alt="auriculares y piano">
+                <div class="carousel-caption d-md-block">
+                    <h5>Equipos de sonido</h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <h2>Lo nuevo</h2>
+    <section class="tarjeta__section">
+        <article class="tarjeta__producto">
+            <div>
+                <img class="tarjeta__imagen" src="./imagenes/AURICULAR-AKG-K511-CERRADO-584x800.jpg" alt="">
+            </div>
+            <div class="tarjeta__texto">
+                <h4>Auricular AKG11 cerrado</h4>
+                <p><span>$68249</span></p>
+            </div>
+        </article>
+        <article class="tarjeta__producto">
+            <div>
+                <img class="tarjeta__imagen" src="./imagenes/PIANO-KORG-SP-280-STAGE-DIGITAL2.jpg" alt="">
+            </div>
+            <div class="tarjeta__texto">
+                <h4>Auricular AKG11 cerrado</h4>
+                <p><span>$68249</span></p>
+            </div>
+        </article>
+        <article class="tarjeta__producto">
+            <div>
+                <img class="tarjeta__imagen" src="./imagenes/PIANO-KORG-SP-280-STAGE-DIGITAL2.jpg" alt="">
+            </div>
+            <div class="tarjeta__texto">
+                <h4>Auricular AKG11 cerrado</h4>
+                <p><span>$68249</span></p>
+            </div>
+        </article>
+        <article class="tarjeta__producto">
+            <div>
+                <img class="tarjeta__imagen" src="./imagenes/PIANO-KORG-SP-280-STAGE-DIGITAL2.jpg" alt="">
+            </div>
+            <div class="tarjeta__texto">
+                <h4>Auricular AKG11 cerrado</h4>
+                <p><span>$68249</span></p>
+            </div>
+        </article>
+    </section>
+    <section class="productodestacado__fondo">
+        <div class="productodestacado">
+            <img src="./imagenes/tambor-gendang.jpg" alt="">
+        </div>
+    </section>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide mb-2 mt-3 carousel__index"
+        data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner active carousel__productos">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <article class="tarjeta__producto--carousel">
+                    <div>
+                        <img class="tarjeta__imagen" src="./imagenes/PIANO-KORG-SP-280-STAGE-DIGITAL2.jpg" alt="">
+                    </div>
+                    <div class="tarjeta__texto">
+                        <h5>Auricular AKG11 cerrado</h5>
+                        <p><span>$68249</span></p>
+                    </div>
+                </article>
+                <article class="tarjeta__producto--carousel">
+                    <div>
+                        <img class="tarjeta__imagen" src="./imagenes/PIANO-KORG-SP-280-STAGE-DIGITAL2.jpg" alt="">
+                    </div>
+                    <div class="tarjeta__texto">
+                        <h5>Auricular AKG11 cerrado</h5>
+                        <p><span>$68249</span></p>
+                    </div>
+                </article>
+            </div>
+            <div class="carousel-item carousel__img" data-bs-interval="2000">
+                <article class="tarjeta__producto--carousel">
+                    <div>
+                        <img class="tarjeta__imagen" src="./imagenes/PIANO-KORG-SP-280-STAGE-DIGITAL2.jpg" alt="">
+                    </div>
+                    <div class="tarjeta__texto">
+                        <h4>Auricular AKG11 cerrado</h4>
+                        <p><span>$68249</span></p>
+                    </div>
+                </article>
+                <article class="tarjeta__producto--carousel">
+                    <div>
+                        <img class="tarjeta__imagen" src="./imagenes/PIANO-KORG-SP-280-STAGE-DIGITAL2.jpg" alt="">
+                    </div>
+                    <div class="tarjeta__texto">
+                        <h4>Auricular AKG11 cerrado</h4>
+                        <p><span>$68249</span></p>
+                    </div>
+                </article>
+            </div>
+            <div class="carousel-item carousel__img" data-bs-interval="2000">
+                <article class="tarjeta__producto--carousel">
+                    <div>
+                        <img class="tarjeta__imagen" src="./imagenes/PIANO-KORG-SP-280-STAGE-DIGITAL2.jpg" alt="">
+                    </div>
+                    <div class="tarjeta__texto">
+                        <h4>Auricular AKG11 cerrado</h4>
+                        <p><span>$68249</span></p>
+                    </div>
+                </article>
+                <article class="tarjeta__producto--carousel">
+                    <div>
+                        <img class="tarjeta__imagen" src="./imagenes/PIANO-KORG-SP-280-STAGE-DIGITAL2.jpg" alt="">
+                    </div>
+                    <div class="tarjeta__texto">
+                        <h4>Auricular AKG11 cerrado</h4>
+                        <p><span>$68249</span></p>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="medios__pago">
+        <img src="./imagenes/Medios-de-pago-online-habilitados-en-Argentina.png.opciones.png" alt="">
+    </div>
+
+    <div class="footer__background">
+        <footer>
+            <section class="footer__container">
+                <article class="footer__article">
+                    <h5>INFORMACION</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">¿Quines somos?</li>
+                        <li class="nav-item mb-2">Términos y condiciones</li>
+                        <li class="nav-item mb-2">Política de privacidad</li>
+                        <li class="nav-item mb-2">Aviso legal</li>
+                        <li class="nav-item mb-2">Envíos</li>
+                    </ul>
+                </article>
+                <article class="footer__article">
+                    <h5>CONTACTANOS</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">Sucursales</li>
+                        <li class="nav-item mb-2">goodtasteclients@gmail.com</li>
+                        <li class="nav-item mb-2">Ícono </li>
+                    </ul>
+                </article>
+                <article class="footer__article">
+                    <h5>FEEDBACK Y REDES SOCIALES</h5>
+                    <p>Tienda de instrumentos musicales donde ofrecemos una amplia variedad de instrumentos tantos
+                        nacionales como importados.</p>
+                </article>
+            </section>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
