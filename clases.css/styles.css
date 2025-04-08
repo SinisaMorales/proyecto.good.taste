@@ -1,13 +1,16 @@
-body{
+body {
     height: 100%;
     padding: 0%;
     background-color: #01122E;
 }
-ul,ol{
+
+ul,
+ol {
     list-style-type: none;
 }
-.nav__princ{
-    background-color:#01122E;
+
+.nav__princ {
+    background-color: #01122E;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     position: sticky;
@@ -15,15 +18,17 @@ ul,ol{
     margin-bottom: 1.5vh;
     margin-top: 1.5vh;
 }
-img{
+
+img {
     width: 100%;
     height: 100%;
 }
-.imagen__logo{
+
+.imagen__logo {
     grid-area: 1/3;
 }
 
-.offcanvas__nav{
+.offcanvas__nav {
     background-color: #01122E;
     background-image: url(../imagenes/logo.hermoso.png);
     background-position: center;
@@ -31,75 +36,84 @@ img{
     background-repeat: no-repeat;
     backface-visibility: visible;
 }
-.offcanvas__nav--opaco{
+
+.offcanvas__nav--opaco {
     width: 100%;
     height: 100%;
     background-color: #0008;
-    position:fixed;
+    position: fixed;
 }
 
-.offcanvas__title{
+.offcanvas__title {
     background-color: #EBEBEB;
     border-top-left-radius: 2%;
 }
-.offcanvas__header{
+
+.offcanvas__header {
     text-align: center;
     display: flex;
 }
-.offcanvas__categories{
-    font-family: Playfair Display;
+
+.offcanvas__categories {
+    font-family: Plus Jakarta Sans;
     font-size: large;
     color: #EBEBEB;
     display: inline-block;
     width: 6rem;
 }
-.offcanvas__categories--dropdown{
+
+.offcanvas__categories--dropdown {
     border-left: 2px solid #EBEBEB;
     border-radius: 0%;
     background-color: #01122E;
 }
-.offcanvas__nav--searchbutton{
+
+.offcanvas__nav--searchbutton {
     background-color: #01122E;
-    font-family: Playfair Display;
+    font-family: "Plus Jakarta Sans";
     color: #EBEBEB;
-    font-size: medium;
     font-weight: 500;
     border-color: #EBEBEB;
 }
-.offcanvas__nav--searchbutton:hover{
+
+.offcanvas__nav--searchbutton:hover {
     color: #01122E;
     background-color: #EBEBEB;
 }
-.offcanvas__nav--search{
+
+.offcanvas__nav--search {
     background-color: rgba(105, 101, 101, 0.226);
-    font-family: Playfair Display;
-    font-size: medium;
+    font-family: "Plus Jakarta Sans";
     border: 0px;
     font-weight: 500;
     border-bottom: 2px solid #EBEBEB;
     border-radius: 7%;
 }
-.offcanvas__nav--search:placeholder-shown{
+
+.offcanvas__nav--search:placeholder-shown {
     background-color: rgba(105, 101, 101, 0.226);
-    font-family: Playfair Display;
-    font-size: medium;
+    font-family: "Plus Jakarta Sans";
     border: 0px;
     font-weight: 500;
     border-bottom: 2px solid #EBEBEB;
     border-radius: 7%;
 }
-.carouselprincipal__index{
+
+.carouselprincipal__index {
     z-index: 1;
     height: 60vh;
     margin: 1rem 0 3rem 0;
 }
-.carousel__img{
+
+.carousel__img {
     height: 100%;
 }
-.medios__pago{
+
+.medios__pago {
     margin-top: 2vh;
 }
-.tarjeta__section{
+
+.tarjeta__section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -107,7 +121,7 @@ img{
     padding: 3%;
 }
 
-.productodestacado{
+.productodestacado {
     margin: 3rem 1rem 3rem 1rem;
     background-color: #00000025;
     height: 85vh;
@@ -115,62 +129,75 @@ img{
     border-radius: 3%;
     overflow: hidden;
 }
-.tarjeta__producto{
+
+.tarjeta__producto {
     background-color: #00000025;
     padding: 2%;
     border-bottom: 1px solid #D9D9D9;
     margin-bottom: 8%;
     color: #EBEBEB;
 }
-.tarjeta__imagen{
+
+.tarjeta__imagen {
     height: 32vh;
 }
-.tarjeta__texto{
+
+.tarjeta__texto {
     text-align: center;
     margin-top: 6%;
-    font: 20px Playfair Display;
-    text-transform:none;
+    font: 20px medium"Plus Jakarta Sans";
+    text-transform: none;
 }
-.tarjeta__producto--carousel{
+
+.tarjeta__producto--carousel {
     width: 15rem;
     justify-self: center;
 }
-.carousel__productos{
+
+.carousel__productos {
     padding: 10%;
     background-color: #EBEBEB;
 }
-.footer__background{
+
+.footer__background {
     background-color: #01122E;
     bottom: 0%;
     width: 100%;
     padding: 5vw;
 }
-.footer__container{
+
+.footer__container {
     margin-top: 5%;
     display: grid;
     grid-template-rows: (3, 1fr);
     gap: 3%;
     height: 30rem;
 }
-.footer__article{
+
+.footer__article {
     color: #EBEBEB;
 }
 
 /*seccion guitarras*/
 
-.tarjeta__producto--secciones{
+.tarjeta__producto--secciones {
     background-color: #00000025;
     padding: 2%;
     height: 20vh;
     border-bottom: 1px solid #D9D9D9;
-    margin:4%;
+    margin: 4%;
     color: #EBEBEB;
     display: flex;
     justify-content: space-around;
 }
+
 .tarjeta__texto--secciones {
     text-align: center;
     margin-top: 2%;
-    font: 20px Playfair Display;
+    font: 20px medium "Plus Jakarta Sans";
     text-transform: none;
+}
+.tarjeta__producto--seccionesImg {
+    max-height: 100%;
+    object-fit: contain;
 }
