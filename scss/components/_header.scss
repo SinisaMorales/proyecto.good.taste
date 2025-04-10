@@ -1,0 +1,76 @@
+.nav__princ {
+    background-color: #01122E;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    position: sticky;
+    z-index: 10;
+    margin-bottom: 1.5vh;
+    margin-top: 1.5vh;
+}
+.imagen__logo {
+    grid-area: 1/3;
+}
+.offcanvas__nav {
+    background-color: #01122E;
+    background-image: url(../imagenes/logo.hermoso.png);
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    backface-visibility: visible;
+}
+.offcanvas__nav--opaco {
+    width: 100%;
+    height: 100%;
+    background-color: #0008;
+    position: fixed;
+}
+.offcanvas__title {
+    background-color: #EBEBEB;
+    border-top-left-radius: 2%;
+}
+.offcanvas__header {
+    text-align: center;
+    display: flex;
+}
+.offcanvas__categories {
+    font-family: Plus Jakarta Sans;
+    font-size: large;
+    color: #EBEBEB;
+    display: inline-block;
+    width: 6rem;
+}
+.offcanvas__categories--dropdown {
+    border-left: 2px solid #EBEBEB;
+    border-radius: 0%;
+    background-color: #01122E;
+}
+.offcanvas__nav--searchbutton {
+    background-color: #01122E;
+    font-family: "Plus Jakarta Sans";
+    color: #EBEBEB;
+    font-weight: 500;
+    border-color: #EBEBEB;
+}
+
+.offcanvas__nav--searchbutton:hover {
+    color: #01122E;
+    background-color: #EBEBEB;
+}
+
+.offcanvas__nav--search {
+    background-color: rgba(105, 101, 101, 0.226);
+    font-family: "Plus Jakarta Sans";
+    border: 0px;
+    font-weight: 500;
+    border-bottom: 2px solid #EBEBEB;
+    border-radius: 7%;
+}
+
+.offcanvas__nav--search:placeholder-shown {
+    background-color: rgba(105, 101, 101, 0.226);
+    font-family: "Plus Jakarta Sans";
+    border: 0px;
+    font-weight: 500;
+    border-bottom: 2px solid #EBEBEB;
+    border-radius: 7%;
+}

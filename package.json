@@ -1,0 +1,21 @@
+{
+  "name": "proyecto.good.taste",
+  "version": "1.0.0",
+  "main": "file.js",
+  "scripts": {
+    "sass": "sass --watch scss/main.scss css/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SinisaMorales/proyecto.good.taste.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SinisaMorales/proyecto.good.taste/issues"
+  },
+  "homepage": "https://github.com/SinisaMorales/proyecto.good.taste#readme",
+  "description": ""
+}

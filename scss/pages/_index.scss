@@ -1,0 +1,39 @@
+.medios__pago {
+    margin-top: 2vh;
+}
+
+.tarjeta__section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.4rem;
+    padding: 3%;
+}
+
+.productodestacado {
+    margin: 3rem 1rem 3rem 1rem;
+    background-color: #00000025;
+    height: 85vh;
+    border: 1px solid #D9D9D9;
+    border-radius: 3%;
+    overflow: hidden;
+}
+
+.tarjeta__producto {
+    background-color: #00000025;
+    padding: 2%;
+    border-bottom: 1px solid #D9D9D9;
+    margin-bottom: 8%;
+    color: #EBEBEB;
+}
+
+.tarjeta__imagen {
+    height: 32vh;
+}
+
+.tarjeta__texto {
+    text-align: center;
+    margin-top: 6%;
+    font: 20px medium"Plus Jakarta Sans";
+    text-transform: none;
+}
