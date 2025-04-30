@@ -3,25 +3,35 @@ const productos = [
     {
         nombre: "Auricular AKG11 cerrado",
         precio: "$68.249",
-        imagen: "../imagenes/AURICULAR-AKG-K511-CERRADO-584x800.jpg"
+        imagen: "../imagenes/guitarras/AXL-20058-228x282.jpg",
+        categoria: "auriculares"
     },
     {
         nombre: "Micrófono Condensador Pro",
         precio: "$95.000",
-        imagen: "../imagenes/microfono-condensador.jpg"
+        imagen: "../imagenes/guitarras/COMBO-GUITARRA-ELECTRICA-KANSAS-AMPLIFUNDA-1-23589-1-228x283.jpg",
+        categoria: "microfonos"
     },
     {
         nombre: "Interfaz de Audio USB",
         precio: "$120.500",
-        imagen: "../imagenes/interfaz-audio-usb.jpg"
+        imagen: "../imagenes/guitarras/GUITARRA-ELECTRICA-SCHETER-OMEN-6-PUENTE-FIJO-5928-228x295.jpg",
+        categoria: "interfaces"
     }
 ];
 
-// Función para crear tarjeta de estructura
+const contenedor = document.getElementById("product-container");
+const ordenarSelect = document.getElementById("ordenar");
+const filtrarSelect = document.getElementById("filtrar");
+const buscarInput = document.getElementById("buscar");
+
+function limpiarPrecio(precio) {
+    return parseFloat(precio.replace(/[$.]/g, '').replace(',', '.'));
+}
+
 function crearTarjeta(producto) {
     const tarjeta = document.createElement("article");
     tarjeta.classList.add("tarjeta__producto--secciones");
-
     tarjeta.innerHTML = `
     <div>
         <img src="${producto.imagen}" alt="${producto.nombre}">
@@ -31,19 +41,43 @@ function crearTarjeta(producto) {
         <p><span>${producto.precio}</span></p>
     </div>
     `;
-
     return tarjeta;
 }
 
-// Mostrar productos en el DOM
 function mostrarProductos(lista) {
-    const contenedor = document.getElementById("product-container");
-    contenedor.innerHTML = ""; // Limpiar previo
+    contenedor.innerHTML = "";
     lista.forEach(producto => {
-        const tarjeta = crearTarjeta(producto);
-        contenedor.appendChild(tarjeta);
+        contenedor.appendChild(crearTarjeta(producto));
     });
 }
 
-// Ejecutar al cargar
+function aplicarFiltros() {
+    let lista = [...productos];
+    const categoria = filtrarSelect.value;
+    const busqueda = buscarInput.value.toLowerCase();
+    const orden = ordenarSelect.value;
+
+    if (categoria !== "todos") {
+        lista = lista.filter(p => p.categoria === categoria);
+    }
+
+    if (busqueda !== "") {
+        lista = lista.filter(p => p.nombre.toLowerCase().includes(busqueda));
+    }
+
+    if (orden === "precio-asc") {
+        lista.sort((a, b) => limpiarPrecio(a.precio) - limpiarPrecio(b.precio));
+    } else if (orden === "precio-desc") {
+        lista.sort((a, b) => limpiarPrecio(b.precio) - limpiarPrecio(a.precio));
+    } else if (orden === "nombre") {
+        lista.sort((a, b) => a.nombre.localeCompare(b.nombre));
+    }
+
+    mostrarProductos(lista);
+}
+
+ordenarSelect.addEventListener("change", aplicarFiltros);
+filtrarSelect.addEventListener("change", aplicarFiltros);
+buscarInput.addEventListener("input", aplicarFiltros);
+
 mostrarProductos(productos);

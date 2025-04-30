@@ -1,3 +1,21 @@
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 20px;
+}
+select,
+input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+#product-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .tarjeta__producto--secciones {
     background-color: #00000025;
     padding: 2%;
@@ -7,14 +25,17 @@
     color: #EBEBEB;
     display: flex;
     justify-content: space-around;
-}
+    display: flex;
+    justify-content: space-between;
 
+}
 .tarjeta__texto--secciones {
     text-align: center;
     margin-top: 2%;
     font: 20px medium "Plus Jakarta Sans";
     text-transform: none;
 }
+
 .tarjeta__producto--seccionesImg {
     max-height: 100%;
     object-fit: contain;

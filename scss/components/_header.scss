@@ -58,19 +58,17 @@
 }
 
 .offcanvas__nav--search {
-    background-color: rgba(105, 101, 101, 0.226);
     font-family: "Plus Jakarta Sans";
     border: 0px;
     font-weight: 500;
-    border-bottom: 2px solid #EBEBEB;
+    border-bottom: 2px solid;
     border-radius: 7%;
-}
+    background-color: rgba(255, 255, 255, 0.233);
+    transition: background-color 0.3s ease;
 
-.offcanvas__nav--search:placeholder-shown {
-    background-color: rgba(105, 101, 101, 0.226);
-    font-family: "Plus Jakarta Sans";
-    border: 0px;
-    font-weight: 500;
-    border-bottom: 2px solid #EBEBEB;
-    border-radius: 7%;
+    &:focus:not(:placeholder-shown) {
+    background-color: #EBEBEB;
+    border-color: rgba(255, 255, 255, 0.075);
+    }
+
 }
