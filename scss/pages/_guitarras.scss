@@ -1,15 +1,20 @@
+@use '../components/mixins' as *;
 .filtros {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     gap: 1rem;
     margin-bottom: 20px;
 }
-select,
+select{
+    @include buttonAndToggler;
+    height: 2rem;
+    width: 12rem;
+}
 input {
-    padding: 0.5rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    @include buttonAndToggler;
+    background-color: #D9D9D9;
 }
 #product-container {
     display: flex;

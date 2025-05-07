@@ -1,0 +1,21 @@
+@mixin buttonAndToggler($bg-color: #01122E,
+    $font-family: "Plus Jakarta Sans",
+    $text-color: #EBEBEB,
+    $font-weight: 500,
+    $border-color: #EBEBEB,
+    $hover-bg-color: #EBEBEB,
+    $hover-text-color: #01122E) 
+    {
+    background-color: $bg-color;
+    font-family: $font-family;
+    color: $text-color;
+    font-weight: $font-weight;
+    border: 1px solid $border-color;
+    border-radius: 7%;
+    margin: 0px 7px 0px 7px;
+
+    &:hover {
+        background-color: $hover-bg-color;
+        color: $hover-text-color;
+    }
+}
