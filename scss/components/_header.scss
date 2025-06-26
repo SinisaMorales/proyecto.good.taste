@@ -7,9 +7,11 @@
     margin-bottom: 1.5vh;
     margin-top: 1.5vh;
 }
+
 .imagen__logo {
     grid-area: 1/3;
 }
+
 .offcanvas__nav {
     background-color: #01122E;
     background-image: url(../imagenes/logo.hermoso.png);
@@ -18,20 +20,24 @@
     background-repeat: no-repeat;
     backface-visibility: visible;
 }
+
 .offcanvas__nav--opaco {
     width: 100%;
     height: 100%;
     background-color: #0008;
     position: fixed;
 }
+
 .offcanvas__title {
     background-color: #EBEBEB;
     border-top-left-radius: 2%;
 }
+
 .offcanvas__header {
     text-align: center;
     display: flex;
 }
+
 .offcanvas__categories {
     font-family: Plus Jakarta Sans;
     font-size: large;
@@ -39,11 +45,13 @@
     display: inline-block;
     width: 6rem;
 }
+
 .offcanvas__categories--dropdown {
     border-left: 2px solid #EBEBEB;
     border-radius: 0%;
     background-color: #01122E;
 }
+
 .offcanvas__nav--searchbutton {
     background-color: #01122E;
     font-family: "Plus Jakarta Sans";
@@ -67,8 +75,45 @@
     transition: background-color 0.3s ease;
 
     &:focus:not(:placeholder-shown) {
-    background-color: #EBEBEB;
-    border-color: rgba(255, 255, 255, 0.075);
+        background-color: #EBEBEB;
+        border-color: rgba(255, 255, 255, 0.075);
     }
 
 }
+
+  /* Botón con el ícono */
+.carrito__boton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: 1/5;
+  }
+
+  .carrito__icono {
+    width: 70%;
+    height:70%;
+    stroke: white;
+  }
+  
+  /* Ventana flotante */
+  .carrito__ventana {
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+    width: 200px;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .carrito__ventana--oculto {
+    display: none;
+  }
+  

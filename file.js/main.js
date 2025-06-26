@@ -76,8 +76,14 @@ function aplicarFiltros() {
     mostrarProductos(lista);
 }
 
-ordenarSelect.addEventListener("change", aplicarFiltros);
-filtrarSelect.addEventListener("change", aplicarFiltros);
-buscarInput.addEventListener("input", aplicarFiltros);
 
-mostrarProductos(productos);
+const botonCarrito = document.querySelector('.carrito__boton');
+const ventanaCarrito = document.querySelector('.carrito__ventana');
+
+botonCarrito.addEventListener('click', () => {
+    ventanaCarrito.classList.toggle('carrito__ventana--oculto');
+});
+
+
+
+

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   height: 100%;
   padding: 0%;
@@ -93,6 +94,42 @@ img {
 .offcanvas__nav--search:focus:not(:placeholder-shown) {
   background-color: #EBEBEB;
   border-color: rgba(255, 255, 255, 0.075);
+}
+
+/* Botón con el ícono */
+.carrito__boton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: 1/5;
+}
+
+.carrito__icono {
+  width: 70%;
+  height: 70%;
+  stroke: white;
+}
+
+/* Ventana flotante */
+.carrito__ventana {
+  position: absolute;
+  top: 100%;
+  right: 1rem;
+  width: 200px;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.carrito__ventana--oculto {
+  display: none;
 }
 
 .footer__background {
